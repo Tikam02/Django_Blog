@@ -1,2 +1,2 @@
 # Blog
-Django FullStack Blog
+Django + React FullStack Blog
