@@ -1,15 +1,17 @@
 from django.conf import settings
 from django.conf.urls.static  import static
 from django.contrib import admin
-from django.urls import path
-from posts.views import blog, post, blog_home,  contact
+from django.urls import path,url
+from posts.views import blog, post, blog_home,  contact, search
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',blog_home),
-    path('blog/',blog),
-    path('post/',post),
-    path('contact/',contact),
+    path('blog/', blog, name='post-list'),
+    path('post/<id>/', post, name='post-detail'),
+    path('contact/', contact),
+    path('search/', search, name='search')
+    url(r'^tinymce/', include('tinymce.urls')),
 ]
 
 if settings.DEBUG:
