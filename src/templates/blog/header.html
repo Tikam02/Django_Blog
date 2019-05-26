@@ -32,6 +32,10 @@
               </li>
               <li class="nav-item"><a href="/contact" class="nav-link ">Contact</a>
               </li>
+              {% if request.user.is_staff %}
+              <li class="nav-item"><a href="{% url 'post-create' %}" class="nav-link ">Create</a>
+              </li>
+              {% endif %}
             </ul>
             <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
             <ul class="langs navbar-text"><a href="#" class="active">Dark</a><span>           </span><a href="#">Light</a></ul>

@@ -23,7 +23,13 @@
                     <a href="#">{{ cat }}</a>
                     {% endfor %}
                   </div>
+                    <div>
+                      <a href="{% url 'post-update' id=post.pk %}">Update</a>
+                      <a href="{% url 'post-delete' id=post.pk %}">Delete</a>
+                    </div>
                 </div>
+
+
                 <h1>{{ post.title }}<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
                 <div class="post-footer d-flex align-items-center flex-column flex-sm-row"><a href="#" class="author d-flex align-items-center flex-wrap">
                     <div class="avatar"><img src="{{ post.author.profile_picture.url }}" alt="..." class="img-fluid"></div>
@@ -73,9 +79,9 @@
                       <div class="user d-flex align-items-center">
                         <div class="image">
                           {% if comment.user.author %}
-                          <img src="{{ comment.user.author.profile_picture }}" alt="..." class="img-fluid rounded-circle">
+                          <img src="{{ comment.user.author.profile_picture.url }}" alt="..." class="img-fluid rounded-circle">
                           {% else %}
-                          <img src="{{ comment.user.profile_picture }}" alt="..." class="img-fluid rounded-circle">
+                          <img src="{{ comment.user.profile_picture.url }}" alt="..." class="img-fluid rounded-circle">
                           {% endif %}
                           </div>
                         <div class="title">
@@ -93,18 +99,6 @@
 
                   {% if request.user.is_authenticated %}
                   <div class="comment">
-                    <div class="comment-header d-flex justify-content-between">
-                      <div class="user d-flex align-items-center">
-                        <div class="image"><img src="{% static 'img/user.svg' %}" alt="..." class="img-fluid rounded-circle"></div>
-                        <div class="title"><strong>John Doe</strong><span class="date">May 2016</span></div>
-                      </div>
-                    </div>
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="add-comment">
                   <header>
                     <h3 class="h6">Leave a reply</h3>
                   </header>
