@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.conf.urls.static  import static
 from django.contrib import admin
+from filebrowser.sites import site
 from django.urls import path, include
 from posts.views import (
     blog, post, blog_home,  contact, search,
@@ -18,6 +19,7 @@ urlpatterns = [
     path('contact/', contact),
     path('search/', search, name='search'),
     path('tinymce/', include('tinymce.urls')),
+    path('admin/filebrowser/', site.urls),
 ]
 
 if settings.DEBUG:

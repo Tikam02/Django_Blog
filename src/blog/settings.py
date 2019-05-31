@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'posts',
     'marketing',
     'tinymce',
+    'filebrowser',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
