@@ -35,6 +35,10 @@ INSTALLED_APPS = [
     'marketing',
     'tinymce',
     'filebrowser',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -153,3 +157,11 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
     }
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+
+)
+
+SITE_ID = 1

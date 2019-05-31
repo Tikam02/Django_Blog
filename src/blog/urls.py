@@ -20,6 +20,7 @@ urlpatterns = [
     path('search/', search, name='search'),
     path('tinymce/', include('tinymce.urls')),
     path('admin/filebrowser/', site.urls),
+    path('accounts/', include('allauth.urls')),
 ]
 
 if settings.DEBUG:
