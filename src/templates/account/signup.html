@@ -1,0 +1,37 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock %}
+{% load crispy_forms_tags %}
+{% block title %}Sign up{% endblock %}
+{% block content %}
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+             <!-- Background image for card set in CSS! -->
+          </div>
+                    <div class="card-body">
+<form class="form-signin" method="post">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+              <a class="d-block text-center mt-2 small" href="#">Sign In</a>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign up with Facebook</button>
+</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</body>
+{% endblock content %}

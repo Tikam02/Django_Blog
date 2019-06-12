@@ -1,0 +1,46 @@
+{% extends "account/base.html" %}
+
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% load crispy_forms_tags %}
+
+
+
+{% block content %}
+
+
+
+<body>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Welcome back!</h3>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                                <button class="btn btn-success" type="submit">Log in</button>
+                        <a href="{% url 'account_signup' %}" class="btn btn-success" role="button">Signup</a>
+                    </form>
+                <a href="{% url 'account_reset_password' %}">Forgot Password?</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+{% endblock content %}

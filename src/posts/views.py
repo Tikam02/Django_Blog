@@ -102,8 +102,8 @@ def post(request, id):
     }
     return render(request, 'blog/post.html', context)
 
-def contact(request):
-    return render(request, 'blog/contact.html',{})
+def about(request):
+    return render(request, 'blog/about.html',{})
 
 def post_create(request):
     title = 'Create'

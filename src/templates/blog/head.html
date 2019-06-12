@@ -1,8 +1,12 @@
 {% load static %}
 <head>
+    {% block styles %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+    {% endblock %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Elynous Blog - [Hack</title>
+    <title>Elynous Blog </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -12,20 +16,23 @@
     <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
     <!-- Custom icon font-->
     <link rel="stylesheet" href="{% static 'css/fontastic.css' %}">
-    <!-- Google fonts - Open Sans-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <!-- Fancybox-->
     <link rel="stylesheet" href="{% static 'vendor/@fancyapps/fancybox/jquery.fancybox.min.css' %}">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="{% static 'css/style.default.css' %}"  id="theme-stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.blue.css' %}"  id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+
+
     <!-- Favicon-->
-    <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+    <link rel="shortcut icon" href="{% static 'img/logo.jpg' %}">
 <!--    &lt;!&ndash; Tweaks for older IEs&ndash;&gt;&lt;!&ndash;[if lt IE 9]>-->
 <!--        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
 <!--        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]&ndash;&gt;-->
 
 
-    <link href="{% static "styles/github.css" %}" rel="stylesheet">
+    <link href="{% static "css/github.css" %}" rel="stylesheet">
   </head>
