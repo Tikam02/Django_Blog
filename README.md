@@ -24,3 +24,6 @@ Django  FullStack Blog
 
 ![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b6.png "HomePage")
 
+![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b7.png "Content Editor")
+
+
