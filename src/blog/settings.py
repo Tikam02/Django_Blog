@@ -168,6 +168,9 @@ TINYMCE_DEFAULT_CONFIG = {
     'statusbar': True,
     }
 
+FILEBROWSER_DIRECTORY = ''
+DIRECTORY = ''
+
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
