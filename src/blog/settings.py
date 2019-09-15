@@ -16,7 +16,7 @@ SECRET_KEY = '&zxywg-puvg2o94xh3c3@ylg352^#blxqzvb$imqfq)%6zf-5+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['68.183.80.207']
+ALLOWED_HOSTS = ['127.0.0.1','52.66.14.58','.elynous.co']
 
 
 
@@ -88,9 +88,9 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'nous_prod',
-        'USER': 'nous',
-        'PASSWORD': 'ELYN0U$',
+        'NAME': 'blog',
+        'USER': 'timon',
+        'PASSWORD': 'tik@m',
         'HOST': 'localhost',
         'PORT': '',
     }
