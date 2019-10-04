@@ -12,18 +12,18 @@ Django  FullStack Blog
 ********
 
 
-![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b1.png "HomePage")
+![alt text](https://github.com/Tikam02/Django_Blog/blob/master/ss/b1.png "HomePage")
 
-![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b2.png "HomePage")
+![alt text](https://github.com/Tikam02/Django_Blog/blob/master/ss/b2.png "HomePage")
 
-![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b3.png "HomePage")
+![alt text](https://github.com/Tikam02/Django_Blog/blob/master/ss/b3.png "HomePage")
 
-![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b4.png "HomePage")
+![alt text](https://github.com/Tikam02/Django_Blog/blob/master/ss/b4.png "HomePage")
 
-![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b5.png "HomePage")
+![alt text](https://github.com/Tikam02/v_Blog/blob/master/ss/b5.png "HomePage")
 
-![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b6.png "HomePage")
+![alt text](https://github.com/Tikam02/Django_Blog/blob/master/ss/b6.png "HomePage")
 
-![alt text](https://github.com/Tikam02/Blog/blob/master/ss/b7.png "Content Editor")
+![alt text](https://github.com/Tikam02/Django_Blog/blob/master/ss/b7.png "Content Editor")
 
 
